@@ -30,7 +30,7 @@
 /* Begin PBXFileReference section */
 		17D81BF452F0780E707038F2 /* Pods-FCSFMTools_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FCSFMTools_Example.release.xcconfig"; path = "Target Support Files/Pods-FCSFMTools_Example/Pods-FCSFMTools_Example.release.xcconfig"; sourceTree = "<group>"; };
 		2F8E90310D6F320051617102 /* Pods_FCSFMTools_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FCSFMTools_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		44D398CF944829146A00E69F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		44D398CF944829146A00E69F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		521742E154E4EDC7D06D8A12 /* Pods-FCSFMTools_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FCSFMTools_Example.debug.xcconfig"; path = "Target Support Files/Pods-FCSFMTools_Example/Pods-FCSFMTools_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6033F0CD18B1DDB618B703AD /* Pods-FCSFMTools_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FCSFMTools_Tests.debug.xcconfig"; path = "Target Support Files/Pods-FCSFMTools_Tests/Pods-FCSFMTools_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* FCSFMTools_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FCSFMTools_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,8 +44,8 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		B2B39D98E20F367B8F756ECC /* Pods_FCSFMTools_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FCSFMTools_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2DAE65C3428551170B7B0DA /* FCSFMTools.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = FCSFMTools.podspec; path = ../FCSFMTools.podspec; sourceTree = "<group>"; };
-		C042F2DE82611CAA721EAAF2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B2DAE65C3428551170B7B0DA /* FCSFMTools.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FCSFMTools.podspec; path = ../FCSFMTools.podspec; sourceTree = "<group>"; };
+		C042F2DE82611CAA721EAAF2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		EE782E8BAA0E45456375F56F /* Pods-FCSFMTools_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FCSFMTools_Tests.release.xcconfig"; path = "Target Support Files/Pods-FCSFMTools_Tests/Pods-FCSFMTools_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,7 +147,6 @@
 				6033F0CD18B1DDB618B703AD /* Pods-FCSFMTools_Tests.debug.xcconfig */,
 				EE782E8BAA0E45456375F56F /* Pods-FCSFMTools_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -419,11 +419,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -465,10 +466,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

@@ -1,0 +1,6 @@
+framework module FCSFMTools {
+  umbrella header "FCSFMTools-umbrella.h"
+
+  export *
+  module * { export * }
+}
